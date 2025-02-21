@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tuberculosis & COVID Detection</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AI-driven Tuberculosis and COVID Detection via MRI</h1>
+    </header>
+    
+    <section id="upload-section">
+        <h2>Upload MRI Image</h2>
+        <input type="file" id="mri-upload" accept="image/*">
+        <button onclick="submitImage()">Analyze Image</button>
+    </section>
+
+    <section id="result-section" class="hidden">
+        <h2>Prediction Results</h2>
+        <p id="prediction"></p>
+        <p id="confidence"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tuberculosis & COVID Detection</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

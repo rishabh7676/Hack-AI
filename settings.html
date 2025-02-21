@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="settings.html" class="nav-link active">Settings</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Settings</h1>
+
+        <div class="settings-section">
+            <h2>Camera Settings</h2>
+            <label for="camera-select">Select Camera:</label>
+            <select id="camera-select"></select>
+        </div>
+
+        <div class="settings-section">
+            <h2>Translation Settings</h2>
+            <label for="language-select">Translation Language:</label>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                </select>
+        </div>
+
+        <div class="settings-section">
+            <h2>Speech Settings</h2>
+            <label for="speech-rate">Speech Rate:</label>
+            <input type="range" id="speech-rate" min="0.5" max="2" step="0.1" value="1">
+            <span id="speech-rate-value">1.0</span>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
